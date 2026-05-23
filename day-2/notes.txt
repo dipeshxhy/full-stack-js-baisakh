@@ -1,0 +1,37 @@
+why we need index.html ?
+-> root file that server need to show or call on loading website 
+
+-> the website will not live without index
+
+!doctype says about we are using html document with of version 5
+
+// tag : it is used to markup language / documents. tag is of like <tag></tag>
+- it has opening and closing tag 
+- it is used to define strc of our documents
+
+// elements : the full strc that includes tag with content like paragraph element, image element, heading 
+
+// why we need comments ?
+-> to provide info so when we comes after some time we actually know what does this line of code did.
+
+// why we need meta tags ?
+-> sitemaps sml generator. it gives additional information to browser. it is for browser . seo related tag . charset attributes . attributes means additional info . it tells about the behaviour of tags
+
+// what is utf-8 ?
+-> UTF-8 (Unicode Transformation Format – 8-bit) is a character encoding system that translates text into a binary format (0s and 1s) that computers can store and transmit.  
+
+// viewport ?
+-> A viewport is the visible area of a screen or digital window where content, such as a webpage or graphic design, is currently displayed. Content outside this area is hidden until the user scrolls or zooms.
+ 
+// initial scale = 1.0 means zooms level
+
+// 1. sementic tags
+-> head, p,img, a, ul,li,ol,button,br,hr,b,i,strong,form,input,select,textarea,table,thead,tr,th,tbody,td,
+
+<!doctype html>
+  <html lang="en" >
+    <head>
+      <meta charset="utf-8">
+    
+    </head>
+  </html>
