@@ -34,4 +34,9 @@ why we need index.html ?
       <meta charset="utf-8">
     
     </head>
+    <body></body>
   </html>
+
+  // absolute : the full url hosted link which we can used and call it anywhere any page
+
+  // relative : the relative link which is either into our project folder
