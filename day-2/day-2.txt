@@ -1,0 +1,10 @@
+// base routes
+-> https://mindrisers.com.np
+
+https: protocol
+2.base url : mindirisers.com.np
+3.port : 80
+//query
+4.slug
+
+iframe : embed inside our website 
