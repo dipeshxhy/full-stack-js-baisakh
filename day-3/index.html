@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables </title>
+
+  <style>
+    table,tr,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <h1>Create Tables with HTML</h1>
+
+  <table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+      <tr>
+        <th>column1</th>
+        <th>column2</th>
+        <th>column3</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td rowspan="2">Row1, Cell1</td>
+          <td>Row1, Cell2</td>
+          <td>Row1, Cell3</td>
+        </tr>
+        <tr>
+          <td>Row2, Cell2</td>
+          <td>Row2, Cell3</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            Row3, Cell1
+          </td>
+        </tr>
+      </tbody>
+      
+    </thead>
+  </table>
+
+  <!-- 2.tables -->
+   <table border="1">
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td rowspan="4">Span rows</td>
+        <td colspan="3">span columns</td>
+      </tr>
+      <tr>
+        <td colspan="2">span columns</td>
+        <td rowspan="4">span both</td>
+      </tr>
+      <tr>
+        <td rowspan="2">span rows</td>
+        <td>span columns</td>
+      </tr>
+      <tr>
+        <td rowspan="3">span both</td>
+      </tr>
+    </tbody>
+   </table>
+</body>
+</html>

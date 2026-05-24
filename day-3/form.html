@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="#">
+      <label for="name">Name:</label><br />
+      <input type="text" placeholder="Name" id="name" />
+      <label for="email">Email:</label><br />
+      <input type="email" placeholder="Email" id="email" />
+      <label for="message">Message:</label><br />
+      <textarea placeholder="Message" id="message"></textarea>
+
+      <!-- other types -->
+      <label for="phone">Phone:</label>
+      <input type="tel" placeholder="Phone Number" id="phone" />
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Password" id="password" />
+      <label for="date">Date of Birth:</label>
+      <input type="date" id="date" />
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" />
+      <label for="range">Range:</label>
+      <input type="range" min="0" max="100" id="range" />
+      <label for="file">Upload File:</label>
+      <input type="file" id="file" />
+      <label for="checkbox">Subscribe to newsletter:</label>
+      <input type="checkbox" id="checkbox" />
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+
+      <label for="courses">Courses:</label>
+      <select name="courses" id="courses">
+        <option value="mern">Full stack with js</option>
+        <option value="mean">Full stack with python</option>
+        <option value="fullstack">UI/UX training</option>
+      </select>
+
+      <h2>Are you sure?</h2>
+      <p>Please review your information before submitting.</p>
+      <label for="yes">Yes:</label>
+      <input type="radio" name="confirm" value="yes" id="yes" />
+      <label for="no">No:</label>
+      <input type="radio" name="confirm" value="no" id="no" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
