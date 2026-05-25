@@ -7,3 +7,7 @@
 // theme forest
 
 // assignments : take tailwind css together
+
+//for fonts : google fonts
+
+// font awesome for icons : font awesome cdn

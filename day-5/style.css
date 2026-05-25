@@ -1,3 +1,7 @@
+body {
+    font-family: "Cedarville Cursive", cursive;
+
+}
 .course {
   border: 2px solid red;
   padding: 10px;
@@ -15,3 +19,11 @@ button {
 .button:hover {
   background-color: darkred;
 }
+
+.circle{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
