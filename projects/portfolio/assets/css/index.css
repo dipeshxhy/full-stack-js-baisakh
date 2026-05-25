@@ -1,0 +1,276 @@
+/* --- 1. GLOBAL & VIEWPORT SETUP --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary-color: oklch(70.5% 0.213 47.604);
+  --secondary-color: #121212;
+  --color-primary-600: oklch(55.3% 0.195 38.402);
+  --color-orange-500: oklch(70.5% 0.213 47.604);
+  --dark-color: oklch(20.5% 0 0);
+  --color-light: oklch(97% 0 0);
+  --text-dark: oklch(70.8% 0 0);
+  --hover-color: oklch(75% 0.183 55.934);
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--color-light);
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* This ensures the content framework always stretches down to the bottom viewport boundary */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a:link,
+a:visited {
+  color: var(--color-light);
+  text-decoration: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-10 {
+  padding: 10px;
+}
+
+.center-text {
+  text-align: center;
+}
+.card {
+  padding: 15px;
+}
+.card-title {
+  font-size: 20px;
+  margin: 20px;
+  letter-spacing: 0.5px;
+}
+.primary-text {
+  color: var(--primary-color);
+}
+.secondary-text {
+  color: var(--text-dark);
+}
+.icon {
+  color: var(--color-light);
+  font-size: 32px;
+  margin-left: 10px;
+  transition: all ease 0.3s; /* Fixed: 'transform' changed to 'transition' */
+}
+.icon:hover {
+  color: var(--primary-color);
+}
+
+/* logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* --- 2. MAIN LAYOUT CLAIM --- */
+main {
+  flex: 1; /* This expands to take all empty space, forcing footer down */
+}
+
+/* nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+}
+.nav-items > li {
+  list-style: none;
+}
+.nav-items a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--color-light);
+}
+.nav-items a:hover {
+  color: var(--primary-color);
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+
+.hero-heading {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.hero-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* img */
+.img-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section {
+  margin: 40px 0;
+}
+.section-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+.section-skills {
+  margin-bottom: 20px;
+}
+
+/* Marquee setup */
+.skills-marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+  border-top: 1px solid var(--color-orange-500);
+  border-bottom: 1px solid var(--color-orange-500);
+}
+
+.skills-track {
+  display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  justify-content: space-around;
+  min-width: 100%;
+  animation: scroll-left-to-right 20s linear infinite;
+}
+
+.skills-track img {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.skills-marquee:hover .skills-track {
+  animation-play-state: paused;
+}
+
+/* section projects */
+.section-projects {
+  margin-bottom: 20px;
+}
+.section-projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  max-height: 45vh;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.02);
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-info {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.project-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.project-info p {
+  font-size: 14px;
+  flex: 1;
+  line-height: 1.5;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+footer {
+  margin-top: auto; /* Keeps footer pinned to baseline when content is short */
+  border-top: 2px solid var(--color-orange-500);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: var(--text-dark);
+
+  /* Organizes your footer inner items horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+footer a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--primary-color);
+}
+
+.copyright {
+  margin-bottom: 0; /* Cleared margin to balance alignment with icons */
+}

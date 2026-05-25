@@ -1,0 +1,111 @@
+/* ==========================================================================
+   PROJECTS PAGE EXCLUSIVE STYLES
+   ========================================================================== */
+
+/* Page heading layout */
+.section-projects {
+  margin: 40px 0;
+  padding: 0 10px;
+}
+
+.section-projects .section-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--color-light);
+}
+
+/* Responsive Grid setup */
+.section-projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Card layout container override */
+.section-projects .project-card {
+  max-height: none; /* Allows the card to scale with bullet content comfortably */
+  background-color: var(--secondary-color);
+  border: 1px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.section-projects .project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card titles */
+.section-projects .card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 20px 20px 15px 20px;
+  color: var(--color-light);
+  letter-spacing: 0.5px;
+}
+
+/* Project screenshot handler */
+.section-projects .project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+/* Bullet list wrapper adjustments */
+.section-projects .project-info {
+  list-style: none; /* Removes standard default ugly bullets */
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1; /* Pushes the button wrapper container to the bottom line */
+}
+
+/* Custom modern dash bullets */
+.section-projects .project-info li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  position: relative;
+  padding-left: 18px;
+}
+
+.section-projects .project-info li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color); /* Matches your orange tone */
+  font-weight: bold;
+}
+
+/* Button position wrapper */
+.section-projects .center-text {
+  text-align: left; /* Aligns clean left with text hierarchy */
+  padding: 0 20px 25px 20px;
+}
+
+/* Reusable global class adjustment button override */
+.section-projects .button {
+  display: inline-block;
+  margin: 0; /* Clears floating margin bugs from home component wrapper */
+  padding: 10px 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.section-projects .button:active {
+  transform: scale(0.97);
+}

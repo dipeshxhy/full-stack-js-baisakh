@@ -1,0 +1,125 @@
+/* ==========================================================================
+   ABOUT PAGE EXCLUSIVE STYLES
+   ========================================================================== */
+
+/* Main layout grid structure to arrange the page sections */
+.about main {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 40px 10px;
+}
+
+/* Section Headings accent border */
+.about main section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--color-light);
+  display: inline-block;
+  position: relative;
+}
+
+/* Subtle line under section headings to clean up the UI */
+.about main section h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* About description paragraph spacing */
+.about main section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  max-width: 800px;
+}
+
+/* --- Styled Lists (Skills, Hobbies, Goals) --- */
+.about main ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+}
+
+/* Specific styling for the single Career Goal bullet to stretch full width */
+.about main section:last-of-type ul {
+  grid-template-columns: 1fr;
+}
+
+.about main ul li {
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: var(--secondary-color);
+  padding: 12px 20px;
+  border-radius: 6px;
+  border-left: 3px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.about main ul li:hover {
+  transform: translateX(5px);
+  color: var(--color-light);
+}
+
+/* --- Clean Dark-Themed Education Table --- */
+.about main table {
+  width: 100%;
+  max-width: 850px;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures borders snap cleanly to rounded wrapper */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about th,
+.about td {
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.about th {
+  background-color: #1a1a1a;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--dark-color);
+}
+
+.about td {
+  color: var(--color-light);
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Highlights row background slightly on hover */
+.about tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Subtle styling for the "dropped" or dynamic timeline entries */
+.about td:last-child {
+  color: var(--text-dark);
+}
+
+/* Mobile responsive fixes for the table container */
+@media (max-width: 600px) {
+  .about main table {
+    display: block;
+    overflow-x: auto; /* Adds clean side-scrolling on tiny devices */
+    white-space: nowrap;
+  }
+}
