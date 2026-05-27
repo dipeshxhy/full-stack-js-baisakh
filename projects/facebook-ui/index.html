@@ -17,541 +17,541 @@
   <body class="bg-stone-900 text-stone-200">
     <!-- navbar -->
 
-    <nav class="nav p-4 flex justify-between items-center bg-neutral-800">
-      <div class="flex items-center gap-2">
-        <img src="facebook.svg" alt="Facebook logo" class="size-10" />
-        <div class="relative">
-          <span class="absolute left-0 top-1/2 transform -translate-y-1/2 p-1"
-            ><i class="fa-solid text-lg pl-2 fa-magnifying-glass"></i
-          ></span>
-          <input
-            class="shadow bg-stone-700 pl-10 text-lg rounded-4xl p-1 outline-0 placeholder:capitalize"
-            type="text"
-            placeholder="search facebook"
-          />
-        </div>
-      </div>
-      <div class="flex gap-20">
-        <a href="#" class="">
-          <i class="fa-regular fa-house text-3xl hover:text-blue-600"></i
-        ></a>
-        <a href="#" class="">
-          <i class="fa-solid fa-tv text-3xl hover:text-blue-600"></i
-        ></a>
-        <a href="#" class="">
-          <i class="fa-solid fa-store text-3xl hover:text-blue-600"></i
-        ></a>
-        <a href="#" class="">
-          <i class="fa-solid fa-users text-3xl hover:text-blue-600"></i
-        ></a>
-        <a href="#" class="">
-          <i class="fa-solid fa-gamepad text-3xl hover:text-blue-600"></i
-        ></a>
-      </div>
-      <div class="flex gap-5">
-        <a href="#" class="">
-          <i
-            class="fa-brands fa-facebook-messenger text-3xl hover:text-blue-600"
-          ></i
-        ></a>
-        <a href="#" class="">
-          <i class="fa-solid fa-bell text-3xl hover:text-blue-600"></i
-        ></a>
-        <a href="#" class="">
-          <i class="fa-solid fa-circle-user text-3xl hover:text-blue-600"></i
-        ></a>
-      </div>
-    </nav>
-    <!--End of navbar -->
+      <header class="bg-stone-800 ">
+        <nav class="p-3 container mx-auto md:p-4 flex justify-between items-center ">
+          <div class="flex items-center gap-2">
+            <img src="facebook.svg" alt="Facebook logo" class="size-10" />
+            <div class="relative">
+              <span class="absolute left-0 top-1/2 transform -translate-y-1/2 p-1"
+                ><i class="fa-solid text-lg pl-2 fa-magnifying-glass"></i
+              ></span>
+              <input
+                class="shadow bg-stone-700 pl-10 text-lg rounded-4xl p-1 outline-0 placeholder:capitalize"
+                type="text"
+                placeholder="search facebook"
+              />
+            </div>
+          </div>
+          <div class=" gap-20 hidden sm:flex">
+            <a href="#" class="">
+              <i class="fa-regular fa-house text-3xl hover:text-blue-600"></i
+            ></a>
+            <a href="#" class="">
+              <i class="fa-solid fa-tv text-3xl hover:text-blue-600"></i
+            ></a>
+            <a href="#" class="">
+              <i class="fa-solid fa-store text-3xl hover:text-blue-600"></i
+            ></a>
+            <a href="#" class="">
+              <i class="fa-solid fa-users text-3xl hover:text-blue-600"></i
+            ></a>
+            <a href="#" class="">
+              <i class="fa-solid fa-gamepad text-3xl hover:text-blue-600"></i
+            ></a>
+          </div>
+          <div class="flex gap-5">
+            <div class="relative ">
+              <a href="#" class="">
+                <i
+                  class="fa-brands fa-facebook-messenger text-3xl hover:text-blue-600"
+                ></i
+              ></a>
+              <span
+                class="w-5 h-5 rounded-full bg-red-500 text-xs text-white flex justify-center items-center absolute -top-1 -right-2"
+                >3</span
+            ></div>
+            <a href="#" class="">
+              <i class="fa-solid fa-bell text-3xl hover:text-blue-600"></i
+            ></a>
+            <a href="#" class="">
+              <i class="fa-solid fa-circle-user text-3xl hover:text-blue-600"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+      <!--End of navbar -->
+      <!-- main content -->
+    <div class="container mx-auto ">
 
-    <!-- main content -->
-    <main class="flex overflow-hidden main">
-      <!-- left side -->
-      <div class="h-screen flex-1 p-3 space-y-4">
-        <div class="flex justify-between items-center">
-          <h1 class="text-2xl text-white font-bold">Home</h1>
-          <a
-            href=""
-            class="text-blue-500 hover:underline tracking-wider text-lg"
-            >Create</a
-          >
-        </div>
-        <div class="flex justify-between items-center">
-          <div class="flex gap-2 items-center">
-            <img
-              src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-              class="size-10 object-cover rounded-full"
-            />
-            <h2>Dipesh Chaudhary</h2>
+      <main class="flex flex-col lg:flex-row overflow-hidden h-[calc(100vh-64px)]">
+        <!-- left side -->
+        <div class="hidden lg:block lg:w-1/4 p-3 space-y-4 overflow-y-auto">
+          <div class="flex justify-between items-center">
+            <h1 class="text-2xl text-white font-bold">Home</h1>
+            <a
+              href=""
+              class="text-blue-500 hover:underline tracking-wider text-lg"
+              >Create</a
+            >
           </div>
-          <i class="fa-solid fa-caret-up text-2xl text-stone-400"></i>
-        </div>
-        <div class="flex items-center gap-2 mb-8">
-          <i class="fa-solid fa-user-plus text-3xl text-stone-400"></i>
-          <p class="text-stone-500 text-md tracking-wide">
-            2 pending friend requests
-          </p>
-        </div>
-        <hr class="text-stone-600" />
-        <div class="space-y-10">
-          <div class="flex items-center gap-2">
-            <img src="favicon.svg" alt="User Plus Icon" class="size-8" />
-            <p class="text-stone-500 text-md tracking-wide">Coder group</p>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <img
+                src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="size-10 object-cover rounded-full"
+              />
+              <h2>Dipesh Chaudhary</h2>
+            </div>
+            <i class="fa-solid fa-caret-up text-2xl text-stone-400"></i>
           </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-users text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">Groups</p>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-calendar text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">Events</p>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-flag text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">Pages</p>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-bookmark text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">Saved</p>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-tv text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">Watch</p>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-gamepad text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">Gaming</p>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-briefcase text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">Jobs</p>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-gear text-2xl text-stone-400"></i>
+          <div class="flex items-center gap-2 mb-8">
+            <i class="fa-solid fa-user-plus text-3xl text-stone-400"></i>
             <p class="text-stone-500 text-md tracking-wide">
-              Settings & Privacy
+              2 pending friend requests
             </p>
           </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-ellipsis text-2xl text-stone-400"></i>
-            <p class="text-stone-500 text-md tracking-wide">See more</p>
-          </div>
-        </div>
-      </div>
-      <!-- End of left side -->
-
-      <!-- center side -->
-      <div class="flex-2 overflow-y-auto">
-        <div class="h-50 relative flex items-center gap-4 py-4">
-          <div class="w-32 h-full relative overflow-hidden rounded-md">
-            <img
-              src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-              class="object-cover w-full h-full opacity-80"
-            />
-            <span
-              class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </span>
-            <div
-              class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
-            >
-              <p class="text-xl text-stone-500">Add to story</p>
-            </div>
-          </div>
-          <div class="w-32 h-full relative overflow-hidden rounded-md">
-            <img
-              src="https://picsum.photos/200/300"
-              alt=""
-              class="object-cover h-full w-full opacity-80"
-            />
-            <span
-              class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
-            >
-              <img
-                src="https://picsum.photos/200/300"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </span>
-            <div
-              class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
-            >
-              <p class="text-xl text-stone-500">ShadowRoot</p>
-            </div>
-          </div>
-          <div class="w-32 h-full relative rounded-md overflow-hidden">
-            <img
-              src="https://picsum.photos/200/300"
-              alt=""
-              class="object-cover w-full h-full opacity-80"
-            />
-            <span
-              class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
-            >
-              <img
-                src="https://picsum.photos/200/300"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </span>
-            <div
-              class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
-            >
-              <p class="text-xl text-stone-500">HexCoder</p>
-            </div>
-          </div>
-          <div class="w-32 h-full relative rounded-md overflow-hidden">
-            <img
-              src="https://picsum.photos/200/300"
-              alt=""
-              class="object-cover h-full w-full opacity-80"
-            />
-            <span
-              class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
-            >
-              <img
-                src="https://picsum.photos/200/300"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </span>
-            <div
-              class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
-            >
-              <p class="text-xl text-stone-500">CipherX</p>
-            </div>
-          </div>
-          <div class="w-32 h-full relative rounded-md overflow-hidden">
-            <img
-              src="https://picsum.photos/200/300"
-              alt=""
-              class="object-cover h-full w-full opacity-80"
-            />
-            <span
-              class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
-            >
-              <img
-                src="https://picsum.photos/200/300"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </span>
-            <div
-              class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
-            >
-              <p class="text-xl text-stone-500">AsyncAizen</p>
-            </div>
-          </div>
-          <div
-            class="bg-stone-700 w-10 h-10 absolute -right-2 rounded-full flex justify-center items-center"
-          >
-            <button
-              class="rounded-full flex justify-center items-center text-lg"
-            >
-              <i class="fa-solid fa-angles-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- post writing -->
-        <div class="bg-stone-800 p-4 mb-6">
-          <div class="flex items-center gap-2 mb-4">
-            <img
-              src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-              class="size-10 object-cover rounded-full"
-            />
-            <input
-              type="text"
-              placeholder="What's on your mind, Dipesh?"
-              class="bg-stone-700 rounded-full w-full p-3 outline-none text-lg"
-            />
-          </div>
-          <hr class="text-stone-500" />
-
-          <div class="flex justify-between items-center mt-4">
+          <hr class="text-stone-600" />
+          <div class="space-y-10">
             <div class="flex items-center gap-2">
-              <i class="fa-solid fa-images text-green-500 text-xl"></i>
-              <p class="text-stone-500 text-md tracking-wide">Photo/Video</p>
+              <img src="favicon.svg" alt="User Plus Icon" class="size-8" />
+              <p class="text-stone-500 text-md tracking-wide">Coder group</p>
             </div>
             <div class="flex items-center gap-2">
-              <i class="fa-solid fa-user-plus text-blue-500 text-xl"></i>
-              <p class="text-stone-500 text-md tracking-wide">Tag Friends</p>
+              <i class="fa-solid fa-users text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">Groups</p>
             </div>
             <div class="flex items-center gap-2">
-              <i class="fa-solid fa-smile text-yellow-500 text-xl"></i>
+              <i class="fa-solid fa-calendar text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">Events</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-flag text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">Pages</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-bookmark text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">Saved</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-tv text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">Watch</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-gamepad text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">Gaming</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-briefcase text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">Jobs</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-gear text-2xl text-stone-400"></i>
               <p class="text-stone-500 text-md tracking-wide">
-                Feelings/Activity
+                Settings & Privacy
               </p>
             </div>
-          </div>
-        </div>
-
-        <!-- posts -->
-        <div class="flex flex-col gap-10">
-          <div class="bg-stone-800 p-4">
-            <div class="flex items-center justify-between mb-4">
-              <div class="flex items-center gap-2">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <div>
-                  <h2 class="font-semibold">Dipesh Chaudhary</h2>
-                  <p class="text-sm text-stone-500">Just now</p>
-                </div>
-              </div>
-              <i class="fa-solid fa-ellipsis"></i>
-            </div>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="h-full w-full">
-              <img
-                src="https://picsum.photos/200/100?grayscale
-                        "
-                alt=""
-                class="w-full object-cover rounded-md"
-              />
-            </div>
-            <div class="mt-4">
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-thumbs-up"></i> Like
-              </button>
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-comment"></i> Comment
-              </button>
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-share"></i> Share
-              </button>
-            </div>
-          </div>
-          <div class="bg-stone-800 p-4">
-            <div class="flex items-center justify-between mb-4">
-              <div class="flex items-center gap-2">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <div>
-                  <h2 class="font-semibold">Dipesh Chaudhary</h2>
-                  <p class="text-sm text-stone-500">2 hours ago</p>
-                </div>
-              </div>
-              <i class="fa-solid fa-ellipsis"></i>
-            </div>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="h-full w-full">
-              <img
-                src="https://picsum.photos/200/100?grayscale
-                        "
-                alt=""
-                class="w-full object-cover rounded-md"
-              />
-            </div>
-
-            <div class="mt-4">
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-thumbs-up"></i> Like
-              </button>
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-comment"></i> Comment
-              </button>
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-share"></i> Share
-              </button>
-            </div>
-          </div>
-          <div class="bg-stone-800 p-4">
-            <div class="flex items-center justify-between mb-4">
-              <div class="flex items-center gap-2">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <div>
-                  <h2 class="font-semibold">Dipesh Chaudhary</h2>
-                  <p class="text-sm text-stone-500">Just now</p>
-                </div>
-              </div>
-              <i class="fa-solid fa-ellipsis"></i>
-            </div>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="h-full w-full">
-              <img
-                src="https://picsum.photos/200/100?grayscale
-                        "
-                alt=""
-                class="w-full h-full object-cover rounded-md"
-              />
-            </div>
-            <div class="mt-4">
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-thumbs-up"></i> Like
-              </button>
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-comment"></i> Comment
-              </button>
-              <button class="text-sm text-stone-500 hover:text-stone-300">
-                <i class="fa-solid fa-share"></i> Share
-              </button>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-ellipsis text-2xl text-stone-400"></i>
+              <p class="text-stone-500 text-md tracking-wide">See more</p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of center side -->
-
-      <!-- right side -->
-      <div class="flex-1 overflow-y-auto">
-        <div class="px-4">
-          <h2 class="font-semibold text-xl text-stone-300 tracking-wider py-4">
-            Sponsored
-          </h2>
-          <div class="flex items-center gap-4 rounded-md mb-8 p-4 bg-stone-800">
+        <!-- End of left side -->
+        <!-- center side -->
+        <div class="w-full lg:w-2/4 overflow-y-auto p-2 md:p-4">
+          <div class="h-50 relative flex items-center gap-4 py-4">
+            <div class="w-32 h-full relative overflow-hidden rounded-md">
+              <img
+                src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="object-cover w-full h-full opacity-80"
+              />
+              <span
+                class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </span>
+              <div
+                class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
+              >
+                <p class="text-xl text-stone-500">Add to story</p>
+              </div>
+            </div>
+            <div class="w-32 h-full relative overflow-hidden rounded-md">
+              <img
+                src="https://picsum.photos/200/300"
+                alt=""
+                class="object-cover h-full w-full opacity-80"
+              />
+              <span
+                class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
+              >
+                <img
+                  src="https://picsum.photos/200/300"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </span>
+              <div
+                class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
+              >
+                <p class="text-xl text-stone-500">ShadowRoot</p>
+              </div>
+            </div>
+            <div class="w-32 h-full relative rounded-md overflow-hidden">
+              <img
+                src="https://picsum.photos/200/300"
+                alt=""
+                class="object-cover w-full h-full opacity-80"
+              />
+              <span
+                class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
+              >
+                <img
+                  src="https://picsum.photos/200/300"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </span>
+              <div
+                class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
+              >
+                <p class="text-xl text-stone-500">HexCoder</p>
+              </div>
+            </div>
+            <div class="w-32 h-full relative rounded-md overflow-hidden">
+              <img
+                src="https://picsum.photos/200/300"
+                alt=""
+                class="object-cover h-full w-full opacity-80"
+              />
+              <span
+                class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
+              >
+                <img
+                  src="https://picsum.photos/200/300"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </span>
+              <div
+                class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
+              >
+                <p class="text-xl text-stone-500">CipherX</p>
+              </div>
+            </div>
+            <div class="w-32 h-full relative rounded-md overflow-hidden">
+              <img
+                src="https://picsum.photos/200/300"
+                alt=""
+                class="object-cover h-full w-full opacity-80"
+              />
+              <span
+                class="w-8 h-8 border rounded-full flex justify-center items-center absolute top-2 left-2 overflow-hidden"
+              >
+                <img
+                  src="https://picsum.photos/200/300"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </span>
+              <div
+                class="absolute bottom-0 left-0 text-sm font-semibold opacity-80 text-white w-full h-10 bg-stone-900/80 flex justify-center items-center"
+              >
+                <p class="text-xl text-stone-500">AsyncAizen</p>
+              </div>
+            </div>
             <div
-              class="w-10 p-2 h-10 flex items-center justify-center bg-red-400 rounded-full self-start"
+              class="bg-stone-700 w-10 h-10 absolute right-0 rounded-full flex justify-center items-center"
             >
-              <img class="w-full h-full" src="pizza.svg" alt="" />
+              <button
+                class="rounded-full flex justify-center items-center text-lg"
+              >
+                <i class="fa-solid fa-angles-right"></i>
+              </button>
             </div>
-            <div>
-              <h3 class="font-semibold">Pizza Hut</h3>
-              <p class="text-sm text-stone-500">
-                Get 20% off on your first order! Use code: PIZZA20
-              </p>
-              <!-- pizza image -->
+          </div>
+          <!-- post writing -->
+          <div class="bg-stone-800 p-4 mb-6">
+            <div class="flex items-center gap-2 mb-4">
               <img
-                src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg"
+                src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
-                class="w-full h-40 object-cover rounded-md mt-2"
+                class="size-10 object-cover rounded-full"
+              />
+              <input
+                type="text"
+                placeholder="What's on your mind, Dipesh?"
+                class="bg-stone-700 rounded-full w-full p-3 outline-none text-lg"
               />
             </div>
-          </div>
-          <hr class="bg-stone-900" />
-
-          <div class="mb-5 py-3">
-            <h2 class="text-stone-500 text-2xl mb-2">Birthdays</h2>
-            <!-- gift icon -->
-            <div class="flex gap-4 items-center">
-              <span>🎁</span>
-              <p class="text-sm text-stone-500">
-                <strong class="text-white">AsyncAizen</strong> and
-                <strong class="text-white">3</strong> other friends have
-                birthdays today.
-              </p>
-            </div>
-          </div>
-
-          <hr class="bg-stone-900" />
-
-          <div >
-            <div class="py-2">
-              <div class="flex justify-between items-center mb-4">
-                <h2 class="text-stone-500 text-2xl mb-2">Contacts</h2>
-                <i class="fas fa-ellipsis text-2xl"></i>
+            <hr class="text-stone-500" />
+            <div class="flex justify-between items-center mt-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-images text-green-500 text-xl"></i>
+                <p class="text-stone-500 text-md tracking-wide">Photo/Video</p>
               </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">AsyncAizen</p>
-
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-user-plus text-blue-500 text-xl"></i>
+                <p class="text-stone-500 text-md tracking-wide">Tag Friends</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-smile text-yellow-500 text-xl"></i>
+                <p class="text-stone-500 text-md tracking-wide">
+                  Feelings/Activity
+                </p>
+              </div>
             </div>
-              <div class="flex items-center gap-4 mb-4">
+          </div>
+          <!-- posts -->
+          <div class="flex flex-col gap-10">
+            <div class="bg-stone-800 p-4">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <div>
+                    <h2 class="font-semibold">Dipesh Chaudhary</h2>
+                    <p class="text-sm text-stone-500">Just now</p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="h-full w-full">
                 <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://picsum.photos/200/100?grayscale
+                          "
                   alt=""
-                  class="size-10 object-cover rounded-full"
+                  class="w-full object-cover rounded-md"
                 />
-                <p class="text-sm text-stone-500">JS</p>
+              </div>
+              <div class="mt-4">
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-thumbs-up"></i> Like
+                </button>
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-comment"></i> Comment
+                </button>
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-share"></i> Share
+                </button>
+              </div>
             </div>
-              <div class="flex items-center gap-4 mb-4">
+            <div class="bg-stone-800 p-4">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <div>
+                    <h2 class="font-semibold">Dipesh Chaudhary</h2>
+                    <p class="text-sm text-stone-500">2 hours ago</p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="h-full w-full">
                 <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://picsum.photos/200/100?grayscale
+                          "
                   alt=""
-                  class="size-10 object-cover rounded-full"
+                  class="w-full object-cover rounded-md"
                 />
-                <p class="text-sm text-stone-500">ReactJS</p>
+              </div>
+              <div class="mt-4">
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-thumbs-up"></i> Like
+                </button>
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-comment"></i> Comment
+                </button>
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-share"></i> Share
+                </button>
+              </div>
             </div>
-              <div class="flex items-center gap-4 mb-4">
+            <div class="bg-stone-800 p-4">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <div>
+                    <h2 class="font-semibold">Dipesh Chaudhary</h2>
+                    <p class="text-sm text-stone-500">Just now</p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="h-full w-full">
                 <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://picsum.photos/200/100?grayscale
+                          "
                   alt=""
-                  class="size-10 object-cover rounded-full"
+                  class="w-full h-full object-cover rounded-md"
                 />
-                <p class="text-sm text-stone-500">NextJS</p>
-            </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">Git.</p>
-            </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">Docker</p>
-            </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">Nodejs</p>
-            </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">NextJS</p>
-            </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">Postgres</p>
-            </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">MongoDB</p>
-            </div>
-              <div class="flex items-center gap-4 mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="size-10 object-cover rounded-full"
-                />
-                <p class="text-sm text-stone-500">Deployment</p>
+              </div>
+              <div class="mt-4">
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-thumbs-up"></i> Like
+                </button>
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-comment"></i> Comment
+                </button>
+                <button class="text-sm text-stone-500 hover:text-stone-300">
+                  <i class="fa-solid fa-share"></i> Share
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of right side -->
-    </main>
-    <!-- End of main content -->
+        <!-- End of center side -->
+        <!-- right side -->
+        <div class="hidden xl:block xl:w-1/4 overflow-y-auto p-4">
+          <div class="px-4">
+            <h2 class="font-semibold text-xl text-stone-300 tracking-wider py-4">
+              Sponsored
+            </h2>
+            <div class="flex items-center gap-4 rounded-md mb-8 p-4 bg-stone-800">
+              <div
+                class="w-10 p-2 h-10 flex items-center justify-center bg-red-400 rounded-full self-start"
+              >
+                <img class="w-full h-full" src="pizza.svg" alt="" />
+              </div>
+              <div>
+                <h3 class="font-semibold">Pizza Hut</h3>
+                <p class="text-sm text-stone-500">
+                  Get 20% off on your first order! Use code: PIZZA20
+                </p>
+                <!-- pizza image -->
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-md mt-2"
+                />
+              </div>
+            </div>
+            <hr class="bg-stone-900" />
+            <div class="mb-5 py-3">
+              <h2 class="text-stone-500 text-2xl mb-2">Birthdays</h2>
+              <!-- gift icon -->
+              <div class="flex gap-4 items-center">
+                <span>🎁</span>
+                <p class="text-sm text-stone-500">
+                  <strong class="text-white">AsyncAizen</strong> and
+                  <strong class="text-white">3</strong> other friends have
+                  birthdays today.
+                </p>
+              </div>
+            </div>
+            <hr class="bg-stone-900" />
+            <div >
+              <div class="py-2">
+                <div class="flex justify-between items-center mb-4">
+                  <h2 class="text-stone-500 text-2xl mb-2">Contacts</h2>
+                  <i class="fas fa-ellipsis text-2xl"></i>
+                </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">AsyncAizen</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">JS</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">ReactJS</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">NextJS</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">Git.</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">Docker</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">Nodejs</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">NextJS</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">Postgres</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">MongoDB</p>
+              </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1778546979332-83ab32582bbc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="size-10 object-cover rounded-full"
+                  />
+                  <p class="text-sm text-stone-500">Deployment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of right side -->
+      </main>
+      <!-- End of main content -->
+    </div>
   </body>
 </html>
