@@ -1,0 +1,12 @@
+.box {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: auto;
+}
+
+body {
+  width: 20vw;
+  background-color: red;
+  min-height: 100vh;
+}
