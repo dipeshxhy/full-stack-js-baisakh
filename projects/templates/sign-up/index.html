@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Sign up</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="flex flex-col items-center p-10 rounded-md bg-stone-100 text-black shadow-lg"
+    >
+      <h1 class="text-3xl mb-10">Sign up</h1>
+      <form action="" class="w-md space-y-4">
+        <div class="flex justify-between">
+          <div>
+            <label class="block text-xl uppercase font-medium" for="firstName"
+              >first name</label
+            >
+            <input
+              class="text-lg bg-stone-300 p-1.5 rounded-md px-2 outline-0 text-black"
+              type="text"
+              name="firstName"
+              id="firstName"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xl uppercase font-medium" for="lastName"
+              >last name</label
+            >
+            <input
+              class="text-lg bg-stone-300 p-1.5 rounded-md px-2 outline-0 text-black"
+              type="text"
+              name="lastName"
+              id="lastName"
+            />
+          </div>
+        </div>
+
+        <!-- email -->
+        <div>
+          <label class="block text-xl uppercase font-medium" for="email"
+            >Email</label
+          >
+          <input
+            class="bg-stone-300 text-lg w-full p-1.5 rounded-md px-2 outline-0 text-black"
+            type="text"
+            name="email"
+            id="email"
+          />
+        </div>
+
+        <!-- password -->
+        <div>
+          <label class="block text-xl uppercase font-medium" for="password"
+            >Password</label
+          >
+          <input
+            class="bg-stone-300 w-full text-lg p-1.5 rounded-md px-2 outline-0 text-black"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+
+        <button
+          class="w-full p-2 bg-green-600 text-white font-medium tracking-wide rounded-md hover:bg-green-700 cursor-pointer transition-colors duration-300"
+        >
+          Create account
+        </button>
+
+        <p>
+          Already have an account?
+          <a class="hover:text-blue-800 font-bold" href="">Sign in</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

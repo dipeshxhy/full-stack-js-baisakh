@@ -1,0 +1,23 @@
+// selector
+- id selector
+- class selector
+- attribute
+- group
+- tag
+- universal
+- pseudo selector
+
+// Descendent selector 
+footer a {
+  color:red;
+}
+
+// Adjacent selector
+-> direct comes after the h1
+h1 + p {
+  color:red;
+}
+-> direct child
+footer > a {
+  color:green;
+}
