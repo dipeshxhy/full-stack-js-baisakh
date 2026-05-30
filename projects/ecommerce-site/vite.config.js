@@ -12,6 +12,7 @@ export default defineConfig({
         contact: resolve(__dirname, 'contact.html'),
         login: resolve(__dirname, 'login.html'),
         register: resolve(__dirname, 'register.html'),
+        detail: resolve(__dirname, 'detail.html'),
       },
     },
   },

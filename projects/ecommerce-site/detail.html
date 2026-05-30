@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirFlex Runner &mdash; BuyMart</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar (Matches index.html Layout) -->
+    <nav
+      class="flex justify-between max-w-7xl items-center p-8 container mx-auto bg-white shadow-xs"
+    >
+      <div class="text-xl font-black"><a href="index.html">BuyMart</a></div>
+      <div>
+        <form action="">
+          <input
+            class="border border-orange-400 p-2 outline-0 bg-white"
+            type="text"
+            placeholder="Search for products..."
+          />
+          <button
+            class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="flex gap-10 items-center">
+        <a
+          href="cart.html"
+          class="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center text-white cursor-pointer"
+        >
+          <i class="fa-solid fa-cart-arrow-down"></i>
+        </a>
+
+        <a
+          href="login.html"
+          class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+        >
+          login
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content Layout Section -->
+    <main class="max-w-7xl mx-auto py-12 px-8">
+      <!-- Breadcrumb Navigation Links -->
+      <nav
+        class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-8 flex items-center gap-2"
+      >
+        <a href="index.html" class="hover:text-orange-600 transition-colors"
+          >Home</a
+        >
+        <i class="fa-solid fa-angle-right text-[10px]"></i>
+        <a href="shops.html" class="hover:text-orange-600 transition-colors"
+          >Shop</a
+        >
+        <i class="fa-solid fa-angle-right text-[10px]"></i>
+        <span class="text-gray-800">AirFlex Runner</span>
+      </nav>
+
+      <!-- Split Column Showcase Presentation Layout -->
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start bg-white p-8 rounded-2xl border border-gray-100 shadow-xs"
+      >
+        <!-- LEFT PRESENTATION FRAME: PRODUCT PICTURE DISPLAYS -->
+        <div class="space-y-4">
+          <!-- Main Hero Active Image Display Box -->
+          <div
+            class="bg-gray-100 rounded-xl overflow-hidden aspect-square flex items-center justify-center p-8 relative group"
+          >
+            <span
+              class="absolute top-4 left-4 bg-orange-600 text-white font-black px-3 py-1 rounded text-xs uppercase tracking-widest"
+            >
+              Trending
+            </span>
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop"
+              alt="AirFlex Runner Display"
+              class="max-h-[400px] object-contain drop-shadow-[0_20px_20px_rgba(0,0,0,0.2)] transform group-hover:scale-105 duration-300 transition-transform"
+            />
+          </div>
+
+          <!-- Secondary Variant Image Previews Row Grid -->
+          <div class="grid grid-cols-4 gap-4">
+            <button
+              class="bg-gray-100 p-2 rounded-lg border-2 border-orange-600 aspect-square flex items-center justify-center cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=150&auto=format&fit=crop"
+                class="max-h-16 object-contain"
+              />
+            </button>
+            <button
+              class="bg-gray-100 p-2 rounded-lg border border-transparent hover:border-gray-200 aspect-square flex items-center justify-center cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=150&auto=format&fit=crop"
+                class="max-h-16 object-contain opacity-60"
+              />
+            </button>
+            <button
+              class="bg-gray-100 p-2 rounded-lg border border-transparent hover:border-gray-200 aspect-square flex items-center justify-center cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=150&auto=format&fit=crop"
+                class="max-h-16 object-contain opacity-60"
+              />
+            </button>
+            <button
+              class="bg-gray-100 p-2 rounded-lg border border-transparent hover:border-gray-200 aspect-square flex items-center justify-center cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=150&auto=format&fit=crop"
+                class="max-h-16 object-contain opacity-60"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT PRESENTATION PANEL: METADATA & TRANSACTION SELECTIONS -->
+        <div class="space-y-6">
+          <div class="space-y-2">
+            <h1
+              class="text-3xl md:text-4xl font-black tracking-tight text-gray-900"
+            >
+              AirFlex Runner Pro
+            </h1>
+            <!-- Star Rating Badge Row Layout -->
+            <div class="flex items-center gap-3">
+              <div class="text-amber-500 text-sm flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span
+                class="text-xs text-gray-400 font-bold uppercase tracking-wider"
+                >(48 Verified Reviews)</span
+              >
+            </div>
+          </div>
+
+          <!-- Price Header Presentation Block -->
+          <div class="flex items-baseline gap-4 border-b border-gray-100 pb-4">
+            <span class="text-3xl font-black text-orange-600">$89.00</span>
+            <span class="text-gray-400 line-through text-lg font-medium"
+              >$129.00</span
+            >
+            <span
+              class="text-green-600 font-bold text-xs uppercase bg-green-50 px-2 py-0.5 rounded"
+              >Save 30%</span
+            >
+          </div>
+
+          <!-- Micro Snippet Context Line -->
+          <p class="text-sm text-gray-500 leading-relaxed">
+            Experience ultimate responsive cushioning and premium street style.
+            Engineered with signature ultra-breathable mesh mechanics and a
+            structured impact outer sole designed for active lifestyle support.
+          </p>
+
+          <!-- Color Selector Option Selection Blocks -->
+          <div class="space-y-3">
+            <h4
+              class="text-xs font-bold text-gray-400 uppercase tracking-wider"
+            >
+              Select Color Variant
+            </h4>
+            <div class="flex gap-3">
+              <button
+                class="w-8 h-8 rounded-full bg-red-600 border-2 border-white ring-2 ring-orange-600 cursor-pointer"
+                title="Crimson Fire"
+              ></button>
+              <button
+                class="w-8 h-8 rounded-full bg-lime-600 border-2 border-white hover:ring-2 hover:ring-gray-300 cursor-pointer"
+                title="Volt Green"
+              ></button>
+              <button
+                class="w-8 h-8 rounded-full bg-zinc-900 border-2 border-white hover:ring-2 hover:ring-gray-300 cursor-pointer"
+                title="Stealth Black"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Size Selector Option Selection Blocks -->
+          <div class="space-y-3">
+            <div class="flex justify-between items-center max-w-sm">
+              <h4
+                class="text-xs font-bold text-gray-400 uppercase tracking-wider"
+              >
+                Select Size (US Men)
+              </h4>
+              <button
+                class="text-xs font-bold text-orange-600 hover:underline cursor-pointer"
+              >
+                Size Chart Guide
+              </button>
+            </div>
+            <div class="grid grid-cols-5 gap-2 max-w-sm">
+              <button
+                class="border border-orange-500 bg-orange-50 text-orange-600 font-bold p-2 text-sm rounded transition-colors cursor-pointer"
+              >
+                9
+              </button>
+              <button
+                class="border border-gray-200 hover:border-orange-500 font-bold p-2 text-sm rounded transition-colors cursor-pointer"
+              >
+                9.5
+              </button>
+              <button
+                class="border border-gray-200 hover:border-orange-500 font-bold p-2 text-sm rounded transition-colors cursor-pointer"
+              >
+                10
+              </button>
+              <button
+                class="border border-gray-200 hover:border-orange-500 font-bold p-2 text-sm rounded transition-colors cursor-pointer"
+              >
+                10.5
+              </button>
+              <button
+                class="border border-gray-200 bg-gray-50 text-gray-300 font-bold p-2 text-sm rounded cursor-not-allowed"
+                disabled
+              >
+                11
+              </button>
+            </div>
+          </div>
+
+          <!-- Purchase Metrics & Action Buttons Block Layout -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 pt-4 border-t border-gray-100 max-w-md"
+          >
+            <!-- Counter Controls Box -->
+            <div
+              class="flex items-center border border-gray-200 rounded-md bg-gray-50 h-12 justify-between px-2 w-full sm:w-32 shrink-0"
+            >
+              <button
+                class="w-8 h-8 flex items-center justify-center font-bold text-gray-500 hover:text-black cursor-pointer"
+              >
+                -
+              </button>
+              <span class="font-bold text-sm">1</span>
+              <button
+                class="w-8 h-8 flex items-center justify-center font-bold text-gray-500 hover:text-black cursor-pointer"
+              >
+                +
+              </button>
+            </div>
+
+            <!-- Main Cart Addition Action Button -->
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-black h-12 rounded-md transition-colors duration-200 flex items-center justify-center gap-2 uppercase text-xs tracking-widest cursor-pointer shadow-md"
+            >
+              <i class="fa-solid fa-cart-shopping"></i> Add To Shopping Bag
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM TABBED AREA: SPECS / REVIEWS BLOCK layout -->
+      <section
+        class="mt-12 bg-white rounded-xl border border-gray-100 p-8 space-y-6 shadow-xs"
+      >
+        <div class="flex border-b border-gray-100 gap-8">
+          <button
+            class="font-black text-sm uppercase tracking-wider pb-4 border-b-2 border-orange-600 text-gray-900 cursor-pointer"
+          >
+            Product Description
+          </button>
+          <button
+            class="font-bold text-sm uppercase tracking-wider pb-4 text-gray-400 hover:text-gray-600 cursor-pointer"
+          >
+            Specifications
+          </button>
+        </div>
+
+        <div class="text-sm text-gray-500 leading-relaxed space-y-4 max-w-4xl">
+          <p>
+            The BuyMart AirFlex Runner transforms traditional running
+            architectural engineering into lifestyle wear. Featuring deep
+            hex-pattern flexing lines mapped along the pressure path of human
+            locomotion, this pair offers unparalleled natural freedom of motion.
+          </p>
+          <ul class="list-disc pl-5 space-y-2 text-gray-600">
+            <li>
+              Lightweight structural mesh weave upper matrices for cooling
+              stability.
+            </li>
+            <li>
+              Reactive internal cellular foam midsole inserts offering maximum
+              energy return.
+            </li>
+            <li>
+              Reinforced high-wear zone carbon-rubber structural perimeter
+              grips.
+            </li>
+            <li>
+              Ergonomic padded ankle configurations limiting kinetic heel slips.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Area (Matches index.html Layout) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div class="text-sm">&copy; 2024 BuyMart. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Terms of Service</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Remember to register this new page route point in your vite.config.js file! -->
+  </body>
+</html>
