@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us &mdash; ShoeMart</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar (Matches index.html) -->
+    <nav
+      class="flex justify-between max-w-7xl items-center p-8 container mx-auto bg-white shadow-xs"
+    >
+      <div class="text-xl font-black"><a href="index.html">ShoeMart</a></div>
+      <div>
+        <form action="">
+          <input
+            class="border border-orange-400 p-2 outline-0 bg-white"
+            type="text"
+            placeholder="Search for products..."
+          />
+          <button
+            class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="flex gap-10 items-center">
+        <a
+          href="cart.html"
+          class="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center text-white cursor-pointer"
+        >
+          <i class="fa-solid fa-cart-arrow-down"></i>
+        </a>
+
+        <a
+          href="login.html"
+          class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+        >
+          login
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content Layout Section -->
+    <main class="max-w-7xl mx-auto py-12 px-8">
+      <!-- Top Header Presentation Banner -->
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span
+          class="text-xs uppercase tracking-widest font-black text-orange-600 bg-orange-100 px-3 py-1 rounded-full"
+        >
+          Get In Touch
+        </span>
+        <h1 class="text-4xl font-black tracking-tight">
+          We're Here to Help You
+        </h1>
+        <p class="text-gray-500 text-sm">
+          Have questions about your order, sizing, or latest drops? Drop us a
+          message and our support team will reach out within 24 hours.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <!-- LEFT COLUMN: QUICK CHANNELS INFORMATION -->
+        <div class="space-y-6">
+          <!-- Card 1: Support Hotline -->
+          <div
+            class="bg-white p-6 rounded-xl border border-gray-100 shadow-xs flex items-start gap-4"
+          >
+            <div
+              class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-xl shrink-0"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base text-gray-900">
+                Customer Support
+              </h3>
+              <p class="text-sm text-gray-500 mt-1">Mon-Fri from 9am to 6pm.</p>
+              <a
+                href="tel:+1234567890"
+                class="text-sm font-bold text-orange-600 mt-2 block hover:underline"
+                >+1 (234) 567-890</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2: Email Hub -->
+          <div
+            class="bg-white p-6 rounded-xl border border-gray-100 shadow-xs flex items-start gap-4"
+          >
+            <div
+              class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-xl shrink-0"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base text-gray-900">Email Inquiries</h3>
+              <p class="text-sm text-gray-500 mt-1">
+                For general or business questions.
+              </p>
+              <a
+                href="mailto:support@buymart.com"
+                class="text-sm font-bold text-orange-600 mt-2 block hover:underline"
+                >support@buymart.com</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3: HQ Location Details -->
+          <div
+            class="bg-white p-6 rounded-xl border border-gray-100 shadow-xs flex items-start gap-4"
+          >
+            <div
+              class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-xl shrink-0"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base text-gray-900">
+                Main Headquarters
+              </h3>
+              <p class="text-sm text-gray-500 mt-1 leading-relaxed">
+                101 Street BagBazaar,<br />
+                Kathmandu, Nepal
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT TWO COLUMNS: DYNAMIC INTERACTIVE FORM BOX -->
+        <div
+          class="lg:col-span-2 bg-white p-8 rounded-xl border border-gray-100 shadow-md"
+        >
+          <h2 class="text-xl font-black mb-6">Send A Message</h2>
+
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- Full Name Field -->
+              <div class="space-y-2">
+                <label
+                  class="text-xs font-bold text-gray-400 uppercase tracking-wider block"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="John Doe"
+                  required
+                  class="w-full border border-gray-200 focus:border-orange-500 rounded-md p-3 text-sm bg-white outline-none transition-colors"
+                />
+              </div>
+              <!-- Email Field -->
+              <div class="space-y-2">
+                <label
+                  class="text-xs font-bold text-gray-400 uppercase tracking-wider block"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  placeholder="johndoe@example.com"
+                  required
+                  class="w-full border border-gray-200 focus:border-orange-500 rounded-md p-3 text-sm bg-white outline-none transition-colors"
+                />
+              </div>
+            </div>
+
+            <!-- Subject Selection Field -->
+            <div class="space-y-2">
+              <label
+                class="text-xs font-bold text-gray-400 uppercase tracking-wider block"
+                >Subject Topic</label
+              >
+              <select
+                class="w-full border border-gray-200 focus:border-orange-500 rounded-md p-3 text-sm bg-white outline-none transition-colors"
+              >
+                <option>Order Status & Tracking</option>
+                <option>Returns & Refunds Logistics</option>
+                <option>Product Sizing & Inventory</option>
+                <option>Business Partnerships</option>
+              </select>
+            </div>
+
+            <!-- Message Area Field -->
+            <div class="space-y-2">
+              <label
+                class="text-xs font-bold text-gray-400 uppercase tracking-wider block"
+                >Your Message</label
+              >
+              <textarea
+                rows="5"
+                placeholder="Type your message details here..."
+                required
+                class="w-full border border-gray-200 focus:border-orange-500 rounded-md p-3 text-sm bg-white outline-none transition-colors resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Action Submission Button -->
+            <button
+              type="submit"
+              class="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white font-black px-8 py-3 rounded-md transition-colors duration-200 shadow-xs uppercase text-xs tracking-wider cursor-pointer"
+            >
+              Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW FULL-WIDTH DECORATIVE MAP PLACEHOLDER SECTION -->
+      <section
+        class="mt-12 rounded-xl overflow-hidden border border-gray-100 shadow-xs h-80 bg-gray-200 relative"
+      >
+        <!-- Gray-styled Unsplash aerial backdrop representing context map visuals cleanly -->
+        <img
+          src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+          alt="Map Location Backdrop"
+          class="w-full h-full object-cover grayscale opacity-40 mix-blend-multiply"
+        />
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center p-4 bg-orange-950/10 text-center"
+        >
+          <div
+            class="w-10 h-10 bg-orange-600 text-white rounded-full flex items-center justify-center animate-bounce text-lg shadow-md mb-2"
+          >
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </div>
+          <p
+            class="font-black text-gray-900 bg-white/90 backdrop-blur-xs px-4 py-2 rounded-md shadow-sm text-sm"
+          >
+            ShoeMart Corporate Hub &bull; 101 Street BagBazaar, Kathmandu, Nepal
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Area (Matches index.html) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div class="text-sm">&copy; 2026 ShoeMart. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Terms of Service</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
