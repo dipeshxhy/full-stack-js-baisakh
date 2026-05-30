@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+
+    <style>
+      .parent {
+        height: 900px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        /* gap: 2rem;
+        align-content: center;
+        flex-wrap: wrap; */
+      }
+
+      .child {
+        /* align-content: center; */
+
+        /* justify-self: center; */
+        width: 50px;
+        height: 50px;
+        border: 2px solid red;
+      }
+      .parent .child:nth-of-type(1) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+    </div>
+  </body>
+</html>
