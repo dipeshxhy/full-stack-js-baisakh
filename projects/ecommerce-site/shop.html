@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop &mdash; BuyMart</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar (Matches index.html) -->
+    <nav
+      class="flex justify-between max-w-7xl items-center p-8 container mx-auto bg-white shadow-xs"
+    >
+      <div class="text-xl font-black"><a href="index.html">BuyMart</a></div>
+      <div>
+        <form action="">
+          <input
+            class="border border-orange-400 p-2 outline-0 bg-white"
+            type="text"
+            placeholder="Search for products..."
+          />
+          <button
+            class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="flex gap-10 items-center">
+        <div
+          class="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center text-white cursor-pointer"
+        >
+          <i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
+
+        <a
+          href="login.html"
+          class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+        >
+          login
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <h2 class="text-center text-4xl font-black">All Products</h2>
+    <main
+      class="max-w-7xl mx-auto py-12 px-8 grid grid-cols-1 lg:grid-cols-4 gap-8"
+    >
+      <!-- Filter Sidebar Column -->
+      <aside
+        class="space-y-6 bg-white p-6 rounded-xl border border-gray-100 h-fit"
+      >
+        <div
+          class="flex justify-between items-center border-b border-gray-100 pb-3"
+        >
+          <h3 class="font-bold text-lg flex items-center gap-2">
+            <i class="fa-solid fa-sliders text-orange-600"></i> Filters
+          </h3>
+          <button
+            type="button"
+            class="text-xs text-gray-400 hover:text-orange-600 cursor-pointer"
+          >
+            Clear All
+          </button>
+        </div>
+
+        <!-- Categories Group -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-xs text-gray-400 uppercase tracking-wider">
+            Categories
+          </h4>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center gap-2 cursor-pointer select-none">
+              <input type="checkbox" class="accent-orange-600" /> Running Shoes
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer select-none">
+              <input type="checkbox" class="accent-orange-600" /> Streetwear
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer select-none">
+              <input type="checkbox" class="accent-orange-600" /> Casual
+              Classics
+            </label>
+          </div>
+        </div>
+
+        <!-- Price Range Filter Group -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-xs text-gray-400 uppercase tracking-wider">
+            Price Range
+          </h4>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center gap-2 cursor-pointer select-none">
+              <input type="radio" name="price" class="accent-orange-600" />
+              Under $80
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer select-none">
+              <input type="radio" name="price" class="accent-orange-600" /> $80
+              - $110
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer select-none">
+              <input type="radio" name="price" class="accent-orange-600" /> Over
+              $110
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Products Grid & Header Area -->
+      <section class="lg:col-span-3 space-y-6">
+        <!-- Sorting Utility Bar -->
+        <div
+          class="flex justify-between items-center bg-white p-4 rounded-xl border border-gray-100 shadow-xs"
+        >
+          <p class="text-sm text-gray-500">
+            Showing <span class="font-bold text-gray-800">9</span> products
+          </p>
+          <select
+            class="border border-orange-400 rounded-md p-2 text-sm bg-white outline-none"
+          >
+            <option>Default Sorting</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+        </div>
+
+        <!-- Products Grid Structure -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Product Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="AirFlex Runner"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">AirFlex Runner</h3>
+                <p class="text-gray-600 mt-2">$89.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1608667508764-33cf0726b13a?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Urban Street Pro"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">Urban Street Pro</h3>
+                <p class="text-gray-600 mt-2">$99.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1465453869711-7e174808ace9?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Classic Court 90s"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">Classic Court 90s</h3>
+                <p class="text-gray-600 mt-2">$79.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Volt Edge"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">Volt Edge</h3>
+                <p class="text-gray-600 mt-2">$119.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Zenith Flow"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">Zenith Flow</h3>
+                <p class="text-gray-600 mt-2">$129.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Street Vibe Low"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">Street Vibe Low</h3>
+                <p class="text-gray-600 mt-2">$69.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 7 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1516767254874-281bffac9e9a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Nova Horizon"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">Nova Horizon</h3>
+                <p class="text-gray-600 mt-2">$109.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Pulse React"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">Pulse React</h3>
+                <p class="text-gray-600 mt-2">$99.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 9 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between border border-transparent hover:border-orange-500/20 transition-all duration-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1496202703211-aa28e9500c30?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="AeroFlex Lite"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-lg font-bold">AeroFlex Lite</h3>
+                <p class="text-gray-600 mt-2">$75.00</p>
+              </div>
+              <button
+                class="mt-4 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-md transition-colors duration-200 cursor-pointer"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Area (Matches index.html) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div class="text-sm">&copy; 2024 BuyMart. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Terms of Service</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

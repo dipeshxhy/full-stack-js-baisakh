@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart &mdash; BuyMart</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar (Matches index.html) -->
+    <nav
+      class="flex justify-between max-w-7xl items-center p-8 container mx-auto bg-white shadow-xs"
+    >
+      <div class="text-xl font-black"><a href="index.html">BuyMart</a></div>
+      <div>
+        <form action="">
+          <input
+            class="border border-orange-400 p-2 outline-0 bg-white"
+            type="text"
+            placeholder="Search for products..."
+          />
+          <button
+            class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="flex gap-10 items-center">
+        <a
+          href="cart.html"
+          class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white relative cursor-pointer"
+        >
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          <!-- Badge displaying count -->
+          <span
+            class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold"
+            >2</span
+          >
+        </a>
+
+        <a
+          href="login.html"
+          class="p-3 rounded-md bg-orange-600 hover:bg-orange-700 text-slate-50 duration-200 transition-colors cursor-pointer"
+        >
+          login
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content Layout Section -->
+    <main class="max-w-7xl mx-auto py-12 px-8">
+      <h1 class="text-3xl font-black mb-8 flex items-center gap-3">
+        <i class="fa-solid fa-bag-shopping text-orange-600"></i> Your Shopping
+        Cart
+      </h1>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <!-- LEFT TWO COLUMNS: ITEMS LIST -->
+        <div class="lg:col-span-2 space-y-4">
+          <!-- Cart Item 1 -->
+          <div
+            class="bg-white p-6 rounded-xl border border-gray-100 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-6"
+          >
+            <div class="flex items-center gap-4 w-full sm:w-auto">
+              <img
+                src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?q=80&w=150&auto=format&fit=crop"
+                alt="AirFlex Runner"
+                class="w-20 h-20 object-cover rounded-lg border border-gray-100"
+              />
+              <div>
+                <h3 class="font-bold text-lg">AirFlex Runner</h3>
+                <p class="text-gray-400 text-xs mt-1">
+                  Size: US 10 | Color: Classic White
+                </p>
+                <p class="text-orange-600 font-bold mt-1 text-sm">$89.00</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between sm:justify-end gap-8 w-full sm:w-auto border-t sm:border-t-0 pt-4 sm:pt-0"
+            >
+              <!-- Quantity Controls -->
+              <div class="flex items-center border border-gray-200 rounded-md">
+                <button
+                  type="button"
+                  class="px-3 py-1 bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors cursor-pointer"
+                >
+                  -
+                </button>
+                <span class="px-4 py-1 text-sm font-bold">1</span>
+                <button
+                  type="button"
+                  class="px-3 py-1 bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors cursor-pointer"
+                >
+                  +
+                </button>
+              </div>
+              <!-- Action Button -->
+              <button
+                type="button"
+                class="text-gray-400 hover:text-red-500 duration-150 transition-colors cursor-pointer text-lg p-2"
+                title="Remove item"
+              >
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cart Item 2 -->
+          <div
+            class="bg-white p-6 rounded-xl border border-gray-100 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-6"
+          >
+            <div class="flex items-center gap-4 w-full sm:w-auto">
+              <img
+                src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=150&auto=format&fit=crop"
+                alt="Volt Edge"
+                class="w-20 h-20 object-cover rounded-lg border border-gray-100"
+              />
+              <div>
+                <h3 class="font-bold text-lg">Volt Edge</h3>
+                <p class="text-gray-400 text-xs mt-1">
+                  Size: US 9.5 | Color: Electric Orange
+                </p>
+                <p class="text-orange-600 font-bold mt-1 text-sm">$119.00</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between sm:justify-end gap-8 w-full sm:w-auto border-t sm:border-t-0 pt-4 sm:pt-0"
+            >
+              <!-- Quantity Controls -->
+              <div class="flex items-center border border-gray-200 rounded-md">
+                <button
+                  type="button"
+                  class="px-3 py-1 bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors cursor-pointer"
+                >
+                  -
+                </button>
+                <span class="px-4 py-1 text-sm font-bold">1</span>
+                <button
+                  type="button"
+                  class="px-3 py-1 bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors cursor-pointer"
+                >
+                  +
+                </button>
+              </div>
+              <!-- Action Button -->
+              <button
+                type="button"
+                class="text-gray-400 hover:text-red-500 duration-150 transition-colors cursor-pointer text-lg p-2"
+                title="Remove item"
+              >
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Continue Shopping Link -->
+          <div class="pt-4">
+            <a
+              href="shops.html"
+              class="inline-flex items-center gap-2 text-sm font-bold text-orange-600 hover:text-orange-700 transition-colors"
+            >
+              <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT ONE COLUMN: ORDER SUMMARY -->
+        <aside
+          class="bg-white p-6 rounded-xl border border-gray-100 shadow-md space-y-6"
+        >
+          <h3 class="font-black text-xl border-b border-gray-100 pb-3">
+            Order Summary
+          </h3>
+
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between text-gray-500">
+              <span>Subtotal (2 items)</span>
+              <span class="font-bold text-gray-800">$208.00</span>
+            </div>
+            <div class="flex justify-between text-gray-500">
+              <span>Estimated Shipping</span>
+              <span class="text-green-600 font-bold">FREE</span>
+            </div>
+            <div class="flex justify-between text-gray-500">
+              <span>Tax</span>
+              <span class="font-bold text-gray-800">$0.00</span>
+            </div>
+            <hr class="border-gray-100 my-2" />
+            <div class="flex justify-between text-base font-black">
+              <span>Total Amount</span>
+              <span class="text-orange-600">$208.00</span>
+            </div>
+          </div>
+
+          <!-- Coupon Promo Code Input Box -->
+          <div class="space-y-2">
+            <label
+              class="text-xs font-bold text-gray-400 uppercase tracking-wider block"
+              >Promo / Gift Code</label
+            >
+            <div class="flex gap-2">
+              <input
+                type="text"
+                placeholder="Code"
+                class="border border-gray-200 p-2 text-sm rounded-md outline-none bg-white w-full focus:border-orange-400"
+              />
+              <button
+                type="button"
+                class="bg-gray-800 hover:bg-black text-white text-xs font-bold px-4 rounded-md transition-colors cursor-pointer"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+
+          <!-- Checkout Navigation Button -->
+          <button
+            type="button"
+            class="w-full bg-orange-600 hover:bg-orange-700 text-white font-black py-3 rounded-md transition-colors duration-200 shadow-md cursor-pointer tracking-wider uppercase text-sm text-center"
+          >
+            Proceed To Checkout
+          </button>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer Area (Matches index.html) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div class="text-sm">&copy; 2024 BuyMart. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Terms of Service</a
+          >
+          <a href="#" class="hover:text-gray-200 transition-colors duration-200"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
