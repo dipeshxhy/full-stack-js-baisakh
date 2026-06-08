@@ -1,0 +1,8 @@
+- frontend
+3 jana
+ram : contact page
+shyam : blog page
+hari: product page
+
+- backend
+

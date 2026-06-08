@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css animation</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .movebox {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: move 2s linear infinite;
+      }
+
+      @keyframes move {
+        0% {
+          margin-left: 0;
+          margin-top: 0;
+        }
+        25% {
+          margin-left: 300px;
+          margin-top: 0;
+          background-color: blue;
+        }
+        50% {
+          margin-left: 300px;
+          margin-top: 300px;
+          background-color: green;
+        }
+        75% {
+          margin-left: 0;
+          margin-top: 300px;
+          background-color: yellow;
+        }
+        100% {
+          margin-left: 0;
+          margin-top: 0;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="movebox"></div>
+  </body>
+</html>
