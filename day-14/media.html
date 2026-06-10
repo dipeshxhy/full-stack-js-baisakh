@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        ipsa soluta maxime beatae repellat, quam corrupti expedita sed et iste
+        aliquam quae molestias magnam ex consequuntur adipisci facere
+        necessitatibus quasi quaerat fugit doloribus aspernatur assumenda.
+        Ullam, quos! Atque necessitatibus ipsum nesciunt laborum molestiae sequi
+        deserunt eveniet facere molestias quia quos tempora error, sapiente
+        aperiam esse, in numquam ab eos hic nam debitis et totam quam. Aliquam
+        architecto voluptate enim a dolor molestias repellendus repellat
+        blanditiis unde, quis veritatis ab quibusdam pariatur vero autem rerum
+        molestiae eum eveniet consectetur praesentium! Voluptatem, autem. Illum,
+        eos. Recusandae aspernatur sed tempore enim, hic consequatur?
+      </p>
+    </div>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgreen;
+  }
+
+  /* @media (min-width: 768px) {
+    .container {
+      background-color: #ff0000;
+    }
+  } */
+  /* @media (max-width: 768px)  {
+    .container {
+      background-color: aqua;
+    }
+    p {
+      color: #ff0000;
+      font-size: 1.2rem;
+    }
+  } */
+  /* landscape */
+  @media (orientation: landscape) {
+    .container {
+      background-color: rgb(224, 176, 18);
+    }
+  }
+  /* portrait */
+  @media (orientation: portrait) {
+    .container {
+      background-color: rgb(18, 224, 176);
+    }
+  }
+</style>
