@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 const RegisterPage = () => {
   return (
     <div className="bg-slate-900 container mx-auto my-10 shadow-gray-900 shadow-2xl text-white w-96 p-8 rounded-md">
@@ -44,9 +46,9 @@ const RegisterPage = () => {
         </button>
         <p>
           Already have an account?{' '}
-          <a className="text-purple-500 hover:underline" href="/login">
+          <Link className="text-purple-500 hover:underline" to="/login">
             Login here
-          </a>
+          </Link>
         </p>
       </form>
     </div>
