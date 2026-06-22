@@ -1,3 +1,4 @@
+import FeaturedCities from '../components/FeaturedCities';
 import Hero from '../components/Hero';
 import Works from '../components/Works';
 
@@ -7,6 +8,7 @@ const HeroPage = () => {
       <main>
         <Hero />
         <Works />
+        <FeaturedCities />
       </main>
     </div>
   );
