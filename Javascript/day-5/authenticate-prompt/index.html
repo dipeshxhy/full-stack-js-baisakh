@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authenticate y prompt</title>
+  </head>
+  <body>
+    <script>
+      alert("please enter 'admin' as username and 'password' as password to authenticate.");
+
+      const username = prompt('Enter your username:');
+      const password = prompt('Enter your password:');
+      function greetUser(name) {
+        return `Welcome, ${name}!`;
+      }
+
+      function getRandomDogs(url, callback) {
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            const randomDogImage = data.message;
+            const name = data.message.split('/')[4];
+            callback(data);
+          })
+          .catch((error) => {
+            console.error('Error fetching dog image:', error);
+          });
+      }
+
+      if (username.toLowerCase() === 'admin' && password.toLowerCase() === 'password') {
+        alert('Authentication successful! ✅');
+        document.body.style.backgroundColor = 'lightgreen';
+        document.write(`<h1>${greetUser(username)}</h1>`);
+        getRandomDogs('https://dog.ceo/api/breeds/image/random', (data) => {
+          document.body.innerHTML = `
+            <h1>${greetUser(data.message.split('/')[4])}</h1>
+            <img src="${data.message}" alt="Random Dog" style="max-width: 100%; height: auto; margin-top: 20px;">
+
+          `;
+        });
+      } else {
+        alert('Invalid credentials. ❌, please try again.');
+        document.write('<h1>Authentication failed. ❌</h1>');
+      }
+    </script>
+  </body>
+</html>
