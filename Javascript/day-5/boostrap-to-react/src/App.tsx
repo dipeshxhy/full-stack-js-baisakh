@@ -1,3 +1,4 @@
+import './App.css';
 import Layout from './components/Layout';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -6,7 +7,6 @@ import NotFoundPage from './pages/NotFoundPage';
 import PricingPage from './pages/PricingPage';
 import ServicesPage from './pages/ServicesPage';
 import ShopPage from './pages/ShopPage';
-import './App.css';
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
