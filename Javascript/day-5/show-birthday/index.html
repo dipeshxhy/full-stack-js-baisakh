@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Birthday &mdash;calculate you birthday upcoming!</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="date" id="birthday" name="birthday" required />
+      <button type="submit">Submit</button>
+      <p id="result"></p>
+    </form>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #2c2b2b;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type='date'] {
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        padding: 10px 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      p#result {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const birthdayInput = document.getElementById('birthday').value;
+        const birthdayDate = new Date(birthdayInput);
+        const today = new Date();
+
+        // Set the birthday to the current year
+        birthdayDate.setFullYear(today.getFullYear());
+
+        // If the birthday has already passed this year, set it to next year
+        if (birthdayDate < today) {
+          birthdayDate.setFullYear(today.getFullYear() + 1);
+        }
+
+        const timeDifference = birthdayDate - today;
+        const daysUntilBirthday = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+        console.log(daysUntilBirthday);
+        document.getElementById('result').innerHTML = ''; // Clear previous results
+        document.getElementById('result').innerHTML += `
+          <h2>Age: ${today.getFullYear() - new Date(birthdayInput).getFullYear()} years old!</h2>
+
+          Your next birthday is in ${daysUntilBirthday} day(s)! ${daysUntilBirthday === 0 ? 'Happy Birthday! 🎉' : ''}`;
+      });
+    </script>
+  </body>
+</html>
