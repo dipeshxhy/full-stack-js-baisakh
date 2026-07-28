@@ -30,7 +30,11 @@
 
       colorPicker.addEventListener('input', (event) => {
         document.body.style.backgroundColor = event.target.value;
-        colorValue.textContent = event.target.value;
+        if (event.target.value === '#000000') {
+          colorValue.style.color = '#ffffff';
+        } else {
+          colorValue.style.color = '#000000';
+        }
       });
     </script>
   </body>
